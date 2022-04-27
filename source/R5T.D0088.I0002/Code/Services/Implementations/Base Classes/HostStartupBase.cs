@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using R5T.A0001;
+using R5T.A0001;using R5T.T0064;
 
 
 namespace R5T.D0088.I0002
-{
-    public abstract class HostStartupBase : IHostStartup
+{[ServiceImplementationMarker]
+    public abstract class HostStartupBase : IHostStartup,IServiceImplementation
     {
         public abstract Task ConfigureConfiguration(IConfigurationBuilder configurationBuilder);
 
